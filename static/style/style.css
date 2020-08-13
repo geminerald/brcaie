@@ -22,7 +22,14 @@ nav{
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar-logo-image{
+    max-height: 6vh;
+    padding: 5px;
+}
+
 .logo {
+    display: flex;
+    flex-direction: row;
     color: var(--white-colour);
     letter-spacing: 5px;
     font-size: 20px;
