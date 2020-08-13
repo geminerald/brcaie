@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --white-colour: #EFE9E7;
+    --black-colour: #1e1e1e;
+    --brown-colour: #A98366;
+    --green-colour: #66A893;
+    --purple-colour: #61175B;
+}
 
 
 nav{
