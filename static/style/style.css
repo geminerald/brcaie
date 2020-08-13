@@ -24,7 +24,8 @@ nav{
 
 .navbar-logo-image{
     max-height: 6vh;
-    padding: 5px;
+    margin: 5px;
+    border: 2px solid #fafafa;
 }
 
 .logo {
@@ -33,7 +34,10 @@ nav{
     color: var(--white-colour);
     letter-spacing: 5px;
     font-size: 20px;
+}
 
+.logo h4{
+    padding-left: 10px;
 }
 
 .nav-links{
