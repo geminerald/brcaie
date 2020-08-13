@@ -1,5 +1,8 @@
 import os
 from flask import Flask
+from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
+
 
 from os import path
 if path.exists("env.py"):
@@ -7,6 +10,11 @@ if path.exists("env.py"):
 
 
 app = Flask(__name__)
+
+app.config["MONGO_DBNAME"] = os.environ.get["MONGO_DBNAME"]
+app.config["MONGO_URI"] = os.environ.get["MONGO_URI"]
+
+mongo = PyMongo(app)
 
 
 @app.route('/')
