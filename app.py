@@ -18,7 +18,7 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
-def hello():
+def home():
     return render_template("pages/index.html")
 
 
@@ -26,6 +26,15 @@ def hello():
 def blog():
     return render_template("pages/blog.html", posts=mongo.db.posts.find())
 
+
+@app.route('/about')
+def about():
+    return render_template("pages/about.html")
+
+
+@app.route('/contact')
+def contact():
+    return render_template("pages/contact.html")
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
