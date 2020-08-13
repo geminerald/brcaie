@@ -1,0 +1,27 @@
+<nav>
+	<div class="nav-wrapper">
+		<div class="home-div">
+			<a href="#" class="brand-logo">
+				Pressie
+				<i class="material-icons">card_giftcard</i>
+			</a>
+		</div>
+		<ul id="nav-mobile" class="right nav-links">
+			<li class="navlink"><a href="#">Find a Gift</a></li>
+			<li class="navlink"><a href="#">About</a></li>
+			{% if session.user %}
+			<li class="navlink"><a href="#">Make a List</a></li>
+			<li class="navlink"><a href="#">Profile</a></li>
+			<li class="navlink"><a href="#">Sign Out</a></li>
+			{% else %}
+			<li class="navlink"><a href="#">Log In</a></li>
+			<li class="navlink"><a href="#">Sign Up</a></li>
+			{% endif %}
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+</nav>

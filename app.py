@@ -19,12 +19,12 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def hello():
-    return 'Hello world'
+    return render_template("pages/index.html")
 
 
 @app.route('/blog')
 def blog():
-    return render_template("blog.html", posts=mongo.db.posts.find())
+    return render_template("pages/blog.html", posts=mongo.db.posts.find())
 
 
 if __name__ == '__main__':
