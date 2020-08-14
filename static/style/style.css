@@ -123,6 +123,7 @@ nav {
   }
   .small-screen {
     display: flex !important;
+    justify-content: space-evenly;
   }
 
   .social-links {
@@ -182,10 +183,11 @@ footer p,
 }
 
 .screen-split {
-  width: 50%;
+width: 30%;
   padding: 8px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .social-links {
@@ -206,6 +208,12 @@ footer p,
 
 .small-screen {
   display: none;
+  font-size: 2rem;
+}
+
+.small-screen i,
+.small-screen a{
+    margin: 0, 1rem, 0, 1rem;
 }
 
 .studio-link, .studio-link:hover{
