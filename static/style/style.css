@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: var(--black-colour)
 }
 
 /* Root Styles */
@@ -167,4 +166,9 @@ footer p, .navigation a{
 
 .footer-p{
     width: 50%;
+}
+
+.social-links, i{
+    color: var(--white-colour);
+    font-size: 2rem;
 }
