@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Root Styles */
 
 :root {
@@ -78,6 +82,7 @@ nav {
   transition: all 0.3s ease;
 }
 
+
 /* Animations */
 
 @keyframes navLinkFade {
@@ -107,6 +112,8 @@ nav {
   .nav-links {
     width: 50%;
   }
+
+  
 }
 @media screen and (max-width: 768px) {
   body {
@@ -132,11 +139,26 @@ nav {
   .burger {
     display: block;
   }
+  
+    .screen-split{
+      width: 30%;
+    }
+
+
+  .large-screen{
+      display: none;
+  }
+  .small-screen{
+      display: flex !important;
+  }
+
+  .social-links{
+  }
 }
 
-.nav-active {
-  transform: translateX(0%);
-}
+
+
+
 
 /* Footer */
 
@@ -164,9 +186,11 @@ footer p, .navigation a{
     color: var(--white-colour);
 }
 
-.footer-p{
+.screen-split{
     width: 50%;
     padding: 8px;
+    display: flex;
+    flex-direction: row;
 }
 
 .social-links{
@@ -183,4 +207,14 @@ footer p, .navigation a{
 .social-links a:hover{
     color: var(--green-colour);
     font-size: 3rem;
+}
+
+
+  .small-screen{
+      display: none;
+  }
+
+  
+.nav-active {
+  transform: translateX(0%);
 }
