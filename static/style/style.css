@@ -193,7 +193,7 @@ footer p,
 .social-links a {
   text-decoration: none;
   color: var(--white-colour);
-  margin: 3px;
+  padding: 3px;
   transition: 0.3s ease-in-out;
 }
 
@@ -204,4 +204,9 @@ footer p,
 
 .small-screen {
   display: none;
+}
+
+.studio-link, .studio-link:hover{
+    text-decoration: none;
+    color: #ffffff;
 }
