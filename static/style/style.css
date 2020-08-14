@@ -168,7 +168,18 @@ footer p, .navigation a{
     width: 50%;
 }
 
-.social-links, i{
-    color: var(--white-colour);
+.social-links{
     font-size: 2rem;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: var(--white-colour);
+    margin: 3px;
+    transition: .3s ease-in-out;
+}
+
+.social-links a:hover{
+    color: var(--green-colour);
+    font-size: 3rem;
 }
