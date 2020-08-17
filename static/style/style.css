@@ -238,3 +238,18 @@ width: 30%;
     margin: 50px;
     padding: 50px;
 }
+
+
+/* Blog Page */
+
+.blogpost{
+    margin-bottom: 5rem;
+}
+
+.blogpost-content{
+    padding: 2rem;
+}
+
+.blogpost-info{
+    font-size:1.2rem;
+}

@@ -1,16 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Blog Page bla</h1>
+<h1>Blog Page</h1>
 
-    This is the blog page yak yak yak
-
+<p>Here are our most recent blog posts</p>
+    
     {% for post in posts %}
 
-        {{post.title}}
-        {{post.date}}
-        {{post.author}}
-
+        <article class="blogpost">
+            <h4 class="blogpost-title">{{post.title}}</h4>
+            <h5 class="blogpost-info">{{post.date}} by {{post.author}}</h5>
+            <p class="blogpost-content">{{post.content}}</p>
+        </article>
+        <hr>
     {% endfor %}
 
 {% endblock %}
