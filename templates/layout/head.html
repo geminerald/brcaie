@@ -12,7 +12,11 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="{{url_for('static', filename='style/style.css')}}" type="text/css" />
 	<link rel="icon" href="{{url_for('static', filename='images/brca-icon.png')}}">
+    
+    {% block extracss %}
+
+    {% endblock %}
     <script defer src="{{url_for('static', filename='icons/fontawesome-free-5.14.0-web/js/brands.js')}}"></script>
-    <script defer src="{{url_for('static', filename='icons/fontawesome-free-5.14.0-web/js/solid.js')}}""></script>
+    <script defer src="{{url_for('static', filename='icons/fontawesome-free-5.14.0-web/js/solid.js')}}"></script>
     <script defer src="{{url_for('static', filename='icons/fontawesome-free-5.14.0-web/js/fontawesome.js')}}"></script>
 </head>

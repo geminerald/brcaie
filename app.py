@@ -19,22 +19,22 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def home():
-    return render_template("pages/index.html")
+    return render_template("pages/index.html", title="Home")
 
 
 @app.route('/blog')
 def blog():
-    return render_template("pages/blog.html", posts=mongo.db.posts.find())
+    return render_template("pages/blog.html", posts=mongo.db.posts.find(), title="Blog")
 
 
 @app.route('/about')
 def about():
-    return render_template("pages/about.html")
+    return render_template("pages/about.html", title="About")
 
 
 @app.route('/contact')
 def contact():
-    return render_template("pages/contact.html")
+    return render_template("pages/contact.html", title="Contact")
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
