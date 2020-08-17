@@ -161,8 +161,6 @@ footer {
   background-color: var(--purple-colour);
   min-height: 6vh;
   width: 100%;
-  position: fixed;
-  bottom: 0;
   color: var(--white-colour);
   text-align: center;
   display: flex;
