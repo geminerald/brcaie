@@ -228,3 +228,15 @@ width: 30%;
 
 
 /* Home Page */
+
+.article-image{
+    max-height: 400px;
+    max-width: 400px;
+    float: left;
+    margin: 50px;
+}
+
+.home-article{
+    margin: 50px;
+    padding: 50px;
+}
