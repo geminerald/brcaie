@@ -28,12 +28,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: var(--green-colour);
+  background-color: var(--purple-colour);
   font-family: "Poppins", sans-serif;
 }
 
 .navbar-logo-image {
-  max-height: 6vh;
+  max-height: 7vh;
   margin: 5px;
   border: 2px solid #fafafa;
 }
@@ -49,6 +49,11 @@ nav {
 .logo h4 {
   padding-left: 10px;
   color: var(--white-colour);
+}
+
+h1{
+    width: 100%;
+    text-align: center;
 }
 
 .nav-links {
