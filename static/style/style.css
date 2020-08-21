@@ -87,6 +87,13 @@ h1{
   transition: all 0.3s ease;
 }
 
+.large-screen{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1068px) {
@@ -180,13 +187,14 @@ footer {
   padding: 7px 0 7px 0;
 }
 
+
 footer p,
 .navigation a {
   color: var(--white-colour);
 }
 
 .screen-split {
-width: 30%;
+width: 50%;
   padding: 8px;
   display: flex;
   flex-direction: row;
