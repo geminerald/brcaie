@@ -11,8 +11,8 @@
             <h4 class="blogpost-title">{{post.title}}</h4>
             <h5 class="blogpost-info">{{post.author}}: <small>{{post.date}}</small> </h5>
             <p class="blogpost-content">{{post.content}}</p>
+            <a href="{{url_for('viewpost', post_id = post._id)}}" class="view-post-button">View</a>
         </article>
-        <a href="{{url_for('about')}}" class="view-post-button">View</a>
         <hr>
     {% endfor %}
 

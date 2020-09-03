@@ -277,7 +277,17 @@ footer p,
 
 
 .view-post-button{
-    background-color: var(--purple-colour);
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: var(--green-colour);
     color: var(--white-colour);
     text-decoration: none;
+    transition: 0.1s ease-in;
+    border-radius: 2px;
+}
+
+.view-post-button:hover{
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-decoration-line: none;
 }

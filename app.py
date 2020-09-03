@@ -43,9 +43,10 @@ def addpost():
     return render_template("pages/addpost.html", title="Add New Post")
 
 
-@app.route('/viewpost')
-def viewpost():
-    return render_template("pages/viewpost.html")
+@app.route('/viewpost/<post_id>')
+def viewpost(post_id):
+    post = mongo.db.posts.find_one({"_id": ObjectId(post_id)})
+    return render_template("pages/viewpost.html", post=post)
 
 
 if __name__ == '__main__':
