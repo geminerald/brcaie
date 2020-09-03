@@ -24,7 +24,8 @@ def home():
 
 @app.route('/blog')
 def blog():
-    return render_template("pages/blog.html", posts=mongo.db.posts.find(), title="Blog")
+    return render_template("pages/blog.html",
+                           posts=mongo.db.posts.find(), title="Blog")
 
 
 @app.route('/about')
@@ -35,6 +36,17 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template("pages/contact.html", title="Contact")
+
+
+@app.route('/addpost')
+def addpost():
+    return render_template("pages/addpost", title="Add New Post")
+
+
+@app.route('/viewpost')
+def viewpost():
+    return render_template("pages/viewpost")
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
