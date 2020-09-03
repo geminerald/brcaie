@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>View post</h1>
-
- {{post.title}}
+<h1 class="post-title">{{post.title}}</h1>
  <hr>
- {{post.author}}
+ By {{post.author}}  <a href="{{url_for('blog')}}">Back to Blog Page</a>
  <hr>
  {{post.content}}
 

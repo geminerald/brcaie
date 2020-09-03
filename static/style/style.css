@@ -291,3 +291,8 @@ footer p,
     font-size: 1.3rem;
     text-decoration-line: none;
 }
+
+.post-title{
+    text-align: left;
+    color: var(--black-colour);
+}
