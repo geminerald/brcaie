@@ -111,7 +111,7 @@ h1 {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: var(--green-colour);
+    background-color: var(--purple-colour);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +212,6 @@ footer p,
 }
 
 .social-links a:hover {
-  color: var(--green-colour);
   font-size: 3rem;
 }
 
@@ -266,12 +265,11 @@ footer p,
 
 /* About Page */
 
-.about-header{
-    background-color: var(--green-colour);
-    color: var(--white-colour);
-    text-align: left;
-    padding-left: 20px;
-    margin-left: -25%;
-    margin-top: 0;
-    width: 150%;
+.about-header {
+  background-color: var(--green-colour);
+  color: var(--white-colour);
+  text-align: left;
+  padding: 10px 50px 10px 30px;
+  margin-top: 0;
+  width: 150%;
 }
