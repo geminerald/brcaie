@@ -1,6 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>View post</h1>
 
- <a href="{{url_for('blog')}}">Blog</a>
-
  {{post.title}}
+ <hr>
  {{post.author}}
+ <hr>
+ {{post.content}}
+
+ {% endblock %}
