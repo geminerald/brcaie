@@ -274,3 +274,10 @@ footer p,
   margin-top: 0;
   width: 150%;
 }
+
+
+.view-post-button{
+    background-color: var(--purple-colour);
+    color: var(--white-colour);
+    text-decoration: none;
+}

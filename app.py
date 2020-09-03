@@ -40,12 +40,12 @@ def contact():
 
 @app.route('/addpost')
 def addpost():
-    return render_template("pages/addpost", title="Add New Post")
+    return render_template("pages/addpost.html", title="Add New Post")
 
 
 @app.route('/viewpost')
 def viewpost():
-    return render_template("pages/viewpost")
+    return render_template("pages/viewpost.html")
 
 
 if __name__ == '__main__':

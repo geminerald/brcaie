@@ -12,6 +12,7 @@
             <h5 class="blogpost-info">{{post.author}}: <small>{{post.date}}</small> </h5>
             <p class="blogpost-content">{{post.content}}</p>
         </article>
+        <a href="{{url_for('about')}}" class="view-post-button">View</a>
         <hr>
     {% endfor %}
 
