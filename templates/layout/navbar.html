@@ -1,25 +1,29 @@
 <nav>
-        <div class="logo">
-            <img class="navbar-logo-image" src="{{url_for('static', filename='images/brca.jpg')}}" alt="BRCA Ireland Logo">
-            <h4>BRCA Ireland</h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="{{url_for('home')}}">Home</a>
-            </li>
-            <li>
-                <a href="{{url_for('about')}}">About</a>
-            </li>
-            <li>
-                <a href="{{url_for('blog')}}">Blog</a>
-            </li>
-            <li>
-                <a href="{{url_for('contact')}}">Contact</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+	<div class="logo">
+		<img class="navbar-logo-image" src="{{url_for('static', filename='images/brca.jpg')}}" alt="BRCA Ireland Logo">
+		<div class="copy">
+			<h4>BRCA Ireland</h4>
+			<p class="tagline">Ireland’s national advocacy group for women and men diagnosed with a BRCA 1 and BRCA 2
+				gene alteration.</p>
+		</div>
+	</div>
+	<ul class="nav-links">
+		<li>
+			<a href="{{url_for('home')}}">Home</a>
+		</li>
+		<li>
+			<a href="{{url_for('about')}}">About</a>
+		</li>
+		<li>
+			<a href="{{url_for('blog')}}">Blog</a>
+		</li>
+		<li>
+			<a href="{{url_for('contact')}}">Contact</a>
+		</li>
+	</ul>
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+</nav>
