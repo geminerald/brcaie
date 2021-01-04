@@ -38,9 +38,21 @@ nav {
   border: 2px solid #fafafa;
 }
 
+.copy{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagehead{
+    
+}
+
 .logo {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   color: var(--white-colour);
   letter-spacing: 5px;
   font-size: 20px;
@@ -49,6 +61,8 @@ nav {
 .logo h4 {
   padding-left: 10px;
   color: var(--white-colour);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -95,11 +109,16 @@ h1 {
 }
 
 .tagline{
+    max-width: 100%;
     font-size: 9px;
     letter-spacing: normal;
-    margin: 0;
+    margin: auto;
     padding: 0;
     color: var(--white-colour);
+    max-height: 10px;
+    position: relative;
+    bottom:0;
+    right: 37%;
 }
 
 /* Media Queries */
