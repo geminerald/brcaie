@@ -18,6 +18,7 @@ a {
   --black-colour: #1e1e1e;
   --brown-colour: #a98366;
   --green-colour: #66a893;
+  --green-contrast: #6bbfbc;
   --purple-colour: #61175b;
 }
 
@@ -38,15 +39,14 @@ nav {
   border: 2px solid #fafafa;
 }
 
-.copy{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+.copy {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-.pagehead{
-    
+.pagehead {
 }
 
 .logo {
@@ -108,17 +108,17 @@ h1 {
   justify-content: space-between;
 }
 
-.tagline{
-    max-width: 100%;
-    font-size: 9px;
-    letter-spacing: normal;
-    margin: auto;
-    padding: 0;
-    color: var(--white-colour);
-    max-height: 10px;
-    position: relative;
-    bottom:0;
-    right: 37%;
+.tagline {
+  max-width: 100%;
+  font-size: 9px;
+  letter-spacing: normal;
+  margin: auto;
+  padding: 0;
+  color: var(--white-colour);
+  max-height: 10px;
+  position: relative;
+  bottom: 0;
+  right: 37%;
 }
 
 /* Media Queries */
@@ -265,13 +265,13 @@ footer p,
 
 /* Home Page */
 
-.container{
-    width: 90%;
+.container {
+  width: 90%;
 }
 
-.home-row{
-    width: 100%;
-    display: flex;
+.home-row {
+  width: 100%;
+  display: flex;
 }
 
 .article-image {
@@ -312,24 +312,23 @@ footer p,
   width: 150%;
 }
 
-
-.view-post-button{
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: var(--green-colour);
-    color: var(--white-colour);
-    text-decoration: none;
-    transition: 0.1s ease-in;
-    border-radius: 2px;
+.view-post-button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: var(--green-colour);
+  color: var(--white-colour);
+  text-decoration: none;
+  transition: 0.1s ease-in;
+  border-radius: 2px;
 }
 
-.view-post-button:hover{
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-decoration-line: none;
+.view-post-button:hover {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-decoration-line: none;
 }
 
-.post-title{
-    text-align: left;
-    color: var(--black-colour);
+.post-title {
+  text-align: left;
+  color: var(--black-colour);
 }

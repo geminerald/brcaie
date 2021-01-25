@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% include 'layout/head.html' %}
 
-{% include 'layout/head.html' %}
+  <body>
+    <header>
+      {% include 'layout/navbar.html' %}
+    </header>
+    {% include 'layout/messages.html' %}
 
-<body>
-	<header>
-		{% include 'layout/navbar.html' %}
-	</header>
-	<div class="container">
-		{% include 'layout/messages.html' %}
-
-		{% block content %}
+    <main>
+      <section class="glass">
+        {% block content %} 
         
-		{% endblock %}
-
-	</div>
+        <!-- All Content Goes Here -->
+        
+        {% endblock %}
+      </section>
+    </main>
+    
+<div class="circle1"></div>
+<div class="circle2"></div>
     <footer>
-        {% include 'layout/footer.html' %}
+      {% include 'layout/footer.html' %}
     </footer>
-	{% include 'layout/scripts.html' %}
-</body>
-
+    {% include 'layout/scripts.html' %}
+  </body>
 </html>
