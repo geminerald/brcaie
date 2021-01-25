@@ -88,6 +88,18 @@ h1 {
   font-size: 14px;
 }
 
+.home-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.home-logo-image{
+    margin: 2rem;
+    max-height: 4.2rem;
+}
+
 .burger {
   display: none;
   cursor: pointer;
