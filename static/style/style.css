@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 10vh;
   background-color: var(--purple-colour);
   font-family: "Poppins", sans-serif;
 }
@@ -110,9 +110,10 @@ h1 {
 
 .tagline {
   max-width: 100%;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: normal;
-  margin: auto;
+  margin-left: 4.5rem;
+  margin-top: 4vh;
   padding: 0;
   color: var(--white-colour);
   max-height: 10px;
